@@ -1,57 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1">
-    <link href="/public/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
+<html lang="en-us">
 
-    <title>
-      {% if page.title %}{{ page.title }} &middot; {% endif %}
-      {{ site.tagline }}
-    </title>
+  {% include head.html %}
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/public/css/hyde.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
-
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="/public/favicon.png">
-
-    <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  </head>
   <body>
 
-    <header class="masthead">
-      <div class="masthead-inner">
-        <img src="{{site.author.avatar}}" style="border-radius: 10em;" alt="" width="128" height="128"/>
-        <h2>{{site.author.name}}</h2>
-        <p class="lead">一个有志向的青年</p>
-
-        <div class="colophon">
-          <ul class="colophon-links">
-            <li><a href="/">Home</a></li>
-            <li>
-              <a href="/posts.html">Posts</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/sanvibyfish">Twitter</a>
-            </li>
-            <li>
-              <a href="https://github.com/sanvibyfish">GitHub</a>
-            </li>
-            <li>
-              <a href="/about.html">About Me</a>
-            </li>
-
-          </ul>
-          <p>&copy; 2013. {{ site.author.name }} All rights reserved.</p>
-        </div>
-
-      </div>
-    </header>
+    {% include sidebar.html %}
 
     <div class="content container">
       {{ content }}

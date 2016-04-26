@@ -1,12 +1,28 @@
-title:        Sanvi Lu
-tagline:      "Sanvi 的小屋"
-url:          http://sanvibyfish.github.io
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: false
+
+# Setup
+title:            Sanvi的博客
+tagline:          'A Jekyll theme'
+description:      '亲爱的大叔'
+url:              http://lucanwei.com
+baseurl:          /
+
 author:
-  name:       "Sanvi Lu"
-  email:      "sanvibyfish@gmail.com"
-  avatar:     "https://1.gravatar.com/avatar/ea7613ac0b30a805f357b42bd2e1923c?s=440"
-markdown:     rdiscount
-permalink: /posts/:title
-pygments:     true
-paginate:     5
-disqus_name: sanvibyfish
+  name:           'Sanvi Lu'
+  url:            https://twitter.com/sanvibyfish
+  avatar:         "https://1.gravatar.com/avatar/ea7613ac0b30a805f357b42bd2e1923c?s=440"
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/sanvibyfish
+
+gems: [jekyll-paginate]
