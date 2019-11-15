@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="Sanvi Blog" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="因为自己养了四只猫和两只狗，而且有预感接下来2-3年，宠物行业会进入一个高速发展阶段，所以对于行业的现状做了一些分析 行业背景根据CBDATA《2019宠物消费生态大数据报告》出具的行业报告， 用户规模：中国养宠家庭数量为9978万户，5年内同比增长了43.9%。 消费能力：2018年宠物行业市场规模达到了1722亿元，预计2023年宠物行业规模会超过4000亿。 消费行为：89%的用户会在网上购">
+<meta name="keywords" content="宠物">
+<meta property="og:type" content="article">
+<meta property="og:title" content="宠物行业的一些见解与分析">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;15&#x2F;%E5%AE%A0%E7%89%A9%E8%A1%8C%E4%B8%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A7%81%E8%A7%A3%E4%B8%8E%E5%88%86%E6%9E%90&#x2F;index.html">
+<meta property="og:site_name" content="Sanvi Blog">
+<meta property="og:description" content="因为自己养了四只猫和两只狗，而且有预感接下来2-3年，宠物行业会进入一个高速发展阶段，所以对于行业的现状做了一些分析 行业背景根据CBDATA《2019宠物消费生态大数据报告》出具的行业报告， 用户规模：中国养宠家庭数量为9978万户，5年内同比增长了43.9%。 消费能力：2018年宠物行业市场规模达到了1722亿元，预计2023年宠物行业规模会超过4000亿。 消费行为：89%的用户会在网上购">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-15T08:57:47.036Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2019/11/15/%E5%AE%A0%E7%89%A9%E8%A1%8C%E4%B8%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A7%81%E8%A7%A3%E4%B8%8E%E5%88%86%E6%9E%90/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>宠物行业的一些见解与分析 | Sanvi Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Sanvi Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/15/%E5%AE%A0%E7%89%A9%E8%A1%8C%E4%B8%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A7%81%E8%A7%A3%E4%B8%8E%E5%88%86%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sanvi Lu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sanvi Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          宠物行业的一些见解与分析
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-11-15 15:41:12 / Modified: 16:57:47" itemprop="dateCreated datePublished" datetime="2019-11-15T15:41:12+08:00">2019-11-15</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/11/15/%E5%AE%A0%E7%89%A9%E8%A1%8C%E4%B8%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A7%81%E8%A7%A3%E4%B8%8E%E5%88%86%E6%9E%90/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/11/15/宠物行业的一些见解与分析/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>因为自己养了四只猫和两只狗，而且有预感接下来2-3年，宠物行业会进入一个高速发展阶段，所以对于行业的现状做了一些分析</p>
+<h3 id="行业背景"><a href="#行业背景" class="headerlink" title="行业背景"></a>行业背景</h3><p>根据CBDATA《2019宠物消费生态大数据报告》出具的行业报告，</p>
+<p>用户规模：中国养宠家庭数量为<strong>9978</strong>万户，5年内同比增长了43.9%。</p>
+<p>消费能力：2018年宠物行业市场规模达到了<strong>1722</strong>亿元，预计2023年宠物行业规模会超过<strong>4000</strong>亿。</p>
+<p>消费行为：<strong>89%</strong>的用户会在网上购买宠物用品，<strong>81%</strong>是猫市场，<strong>72.2%</strong>是狗市场。</p>
+<p>年级分层：90/95后是消费主力，其中男<strong>40%</strong>，女<strong>60%</strong></p>
+<p>地区分布：2-4线城市、1线和新1线各占一半的市场规模</p>
+<p>TOP产品：主要是宠物零食、主粮、保健品</p>
+<p>粮食占比：国产粮食和进口量各占一半</p>
+<h3 id="行业垂直划分"><a href="#行业垂直划分" class="headerlink" title="行业垂直划分"></a>行业垂直划分</h3><ul>
+<li>宠物电商</li>
+<li>宠物社交</li>
+<li>宠物服务</li>
+<li>宠物寄养</li>
+<li>宠物智能设备</li>
+<li>宠物活体交易</li>
+<li>宠物医疗</li>
+<li>宠物出行</li>
+<li>宠物保险</li>
+<li>宠物店saas</li>
+<li>宠物殡葬</li>
+<li>宠物食品</li>
+</ul>
+<h3 id="个人见解"><a href="#个人见解" class="headerlink" title="个人见解"></a>个人见解</h3><h4 id="宠物电商"><a href="#宠物电商" class="headerlink" title="宠物电商"></a>宠物电商</h4><p>目前宠物电商已经有成规模的企业，像波奇网、E宠，还有各大渠道的电商。就我自身而言，宠物的粮食是通过熟人渠道拿的，之前是走京东、天猫等一些品牌粮食店直接购买，因为宠物是活体，所以是有情感，对于食品的安全相当的谨慎。对于一些非官方渠道的选择会相对比较慎重，价格反而不是决定购买的根本原因。对于新人养宠来说，通过平台学习到宠物知识和建立起私人的社交圈后，会组建脱离平台，走口碑渠道去购买粮食等。像一些宠物的周边商品，如猫抓板、玩具等会随着养宠的时间推移降低购买率，复购率会大大降低。对于消耗品，如猫砂等会倾向口碑的品牌到专门的品牌旗舰店购买，和猫粮一样，价格不是决定的因素。</p>
+<h3 id="宠物社交"><a href="#宠物社交" class="headerlink" title="宠物社交"></a>宠物社交</h3><p>宠物的社交本质是一个伪命题，大多数平台是给到大家一个展现自家宠物的平台，但头部的KOL反而集中在抖音、小红书、B站这类泛展示的平台上。如果是做宠物的配种等，那么对于宠物自身血统和对方宠物的纯种会做更多的考量，这类反而是熟人关系去牵头，或者专门做活体养殖的宠舍去专业渠道购买。如果是以宠物为切入点，做人的社交，那么为什么不干脆做人的社交呢。不需要做把流量在做一次转发，中间进一步流失。</p>
+<h3 id="宠物服务"><a href="#宠物服务" class="headerlink" title="宠物服务"></a>宠物服务</h3><p>目前宠物服务更多的是线下的宠物护理店，包含洗护、零食销售、美容等项目。市场上目前有几类门店，一类是自营的线下体验店，像小佩这样的线下门店。一类是以加盟形式的宠物店，像波多格。还有一些是自营的宠物店。</p>
+<p>目前线下宠物店主要是以办卡为主，洗护单次消费在60-150之间。线下宠物店覆盖的半径在1km左右，所以需要有足够密集的覆盖，而且宠物店的洗护有点像线下美甲和美发一样，偏向口碑等。</p>
+<h3 id="宠物寄养"><a href="#宠物寄养" class="headerlink" title="宠物寄养"></a>宠物寄养</h3><p>目前宠物寄养分3种模式，一类是以宠物店为维度的寄养，宠物寄养单词80/天，主要关笼子里。一类是以家庭模式寄养，C端用户申请成寄养寄养家庭后，其他用户可以选择进行家庭寄养。还有一类是高端寄养，通常这类都是在相对地段便宜的地方，如奉贤这类地方，大房子，散养的方式，跟宠物有一些训练和互动，一般在200/天，会上门接送。</p>
+<p>因为宠物是活体，是家人，所以很多人不愿意放宠物店寄养。会考虑让朋友上门喂食或者寄养在朋友那，宠物店质量参差不齐，而且不同活体之间可能存在一些传染病。</p>
+<p>家庭寄养的问题在于，很多C端的用户身份没办法去验证，无法产生信任感。比如你会担心对方其实有虐宠倾向，所以大家也不愿意寄养。</p>
+<p>高端寄养，这类类似夏令营一样，基本上是基于口碑传播，对于客人是会做一些挑选过滤的，如果你家宠物看起来不太健康，那么他可能不会做你的生意。不过整体体验是非常棒的，你可以在朋友圈看到自家宠物玩的照片，别人也能看到你家宠物，产生良性的口碑。但这类的店相对比较少，对寄养人员要求比较高，并且获客的成本相对比较高。</p>
+<h3 id="宠物智能设备"><a href="#宠物智能设备" class="headerlink" title="宠物智能设备"></a>宠物智能设备</h3><p>目前第一梯队应该是类似小佩、pidan、petree这类品牌，还有小米也投了猫猫狗狗科技、尾巴生活等。大家都在出自家的饮水机、猫砂盆、喂食器等。这类行业需要有比较大的资金和行业背景。</p>
+<h3 id="宠物活体交易"><a href="#宠物活体交易" class="headerlink" title="宠物活体交易"></a>宠物活体交易</h3><p>目前除去无良的宠舍，大概分为线上和线下。线上主要一些平台销售（如闲鱼）和一些专门做活体宠物的平台，这类的问题是很多人会购买到病宠，可能很快就死了。目前线上没有相对知名的品牌，或者没有担保商，但目前还是相对看好这类行业发展。</p>
+<p>线下主要分私人猫舍和线下门店销售，私人猫舍一般会跟线下门店合作，也有个别通过熟人关系购买。线下门店的好处在于能看得见摸得着，并且大家普遍认为店是有口碑的。不过线下活体售价过高，对于很对养宠小白来说没有判断的概念。对于市场的教育还是需要有时间进行发展。</p>
+<h3 id="宠物医疗"><a href="#宠物医疗" class="headerlink" title="宠物医疗"></a>宠物医疗</h3><p>目前宠物医疗已经有相当大成规模的企业了，如鹏瑞，并且已经上市了，旗下有相当多的医疗品牌，这类需要有行业背景和沉淀。</p>
+<h3 id="宠物出行"><a href="#宠物出行" class="headerlink" title="宠物出行"></a>宠物出行</h3><p>目前宠物出行主要是面向一些运行带宠物的酒店、餐厅，主要会集中在店铺如何在圈子内，这类店铺主要也是以私域的流量宣传为主，目前市面宠物酒店还无法成规模成为一个细分领域，而且这块市场反而容易被携程、马蜂窝等去占领。</p>
+<h3 id="宠物保险"><a href="#宠物保险" class="headerlink" title="宠物保险"></a>宠物保险</h3><p>主要还是以传统保险公司进军宠物行业保险为主，市场潜力巨大。目前宠物医疗的费用相当高，举个例子，一只宠物眼睛受伤，前后医疗费用高达2万，宠物医保和保险行业未来会有相当的发展潜力</p>
+<h3 id="宠物店saas-amp-宠物医院saas"><a href="#宠物店saas-amp-宠物医院saas" class="headerlink" title="宠物店saas &amp; 宠物医院saas"></a>宠物店saas &amp; 宠物医院saas</h3><p>宠物店saas &amp; 宠物医院saas目前从16年到现在已经发展了很长一段时间，基本上满足了宠物店或者宠物医院日常的经营，也孵化出一些品牌。</p>
+<h3 id="宠物殡葬"><a href="#宠物殡葬" class="headerlink" title="宠物殡葬"></a>宠物殡葬</h3><p>这块目前主要还是基于宠物医院，并且大多数人还没殡葬的概念，可能会随意的找个地方埋掉。随时养宠的人意识形态提高，会慢慢孵化出专门的殡葬店。</p>
+<h3 id="宠物食品"><a href="#宠物食品" class="headerlink" title="宠物食品"></a>宠物食品</h3><p>宠物食品主要分主粮和鲜粮，目前主粮有一些相当不错的品牌出现，像疯狂小狗等。这个取决于养宠人对于主粮的看法，未来进口粮和主粮肯定还是会两分天下，这里面需要有至少十年以上的累计。</p>
+<p>鲜粮现在很多企业在做，不过大多数人还是比较图省事，主要吃主粮搭配一些罐头。鲜粮喂食的市场应该会处于小众市场。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AE%A0%E7%89%A9/" rel="tag"># 宠物</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/14/hello-world/" rel="next" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#行业背景"><span class="nav-number">1.</span> <span class="nav-text">行业背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#行业垂直划分"><span class="nav-number">2.</span> <span class="nav-text">行业垂直划分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人见解"><span class="nav-number">3.</span> <span class="nav-text">个人见解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#宠物电商"><span class="nav-number">3.1.</span> <span class="nav-text">宠物电商</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物社交"><span class="nav-number">4.</span> <span class="nav-text">宠物社交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物服务"><span class="nav-number">5.</span> <span class="nav-text">宠物服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物寄养"><span class="nav-number">6.</span> <span class="nav-text">宠物寄养</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物智能设备"><span class="nav-number">7.</span> <span class="nav-text">宠物智能设备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物活体交易"><span class="nav-number">8.</span> <span class="nav-text">宠物活体交易</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物医疗"><span class="nav-number">9.</span> <span class="nav-text">宠物医疗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物出行"><span class="nav-number">10.</span> <span class="nav-text">宠物出行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物保险"><span class="nav-number">11.</span> <span class="nav-text">宠物保险</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物店saas-amp-宠物医院saas"><span class="nav-number">12.</span> <span class="nav-text">宠物店saas &amp; 宠物医院saas</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物殡葬"><span class="nav-number">13.</span> <span class="nav-text">宠物殡葬</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宠物食品"><span class="nav-number">14.</span> <span class="nav-text">宠物食品</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Sanvi Lu</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sanvi Lu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.5.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://sanvibyfish.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {page: {
+            url: "http://yoursite.com/2019/11/15/%E5%AE%A0%E7%89%A9%E8%A1%8C%E4%B8%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A7%81%E8%A7%A3%E4%B8%8E%E5%88%86%E6%9E%90/",
+            identifier: "2019/11/15/宠物行业的一些见解与分析/",
+            title: "宠物行业的一些见解与分析"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://sanvibyfish.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    window.addEventListener('load', loadComments, false);
+</script>
+
+</body>
+</html>
